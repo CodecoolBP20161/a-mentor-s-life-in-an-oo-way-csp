@@ -8,7 +8,6 @@ class Student(Person):
     retrospective_object = ''
 
     def __init__(self, knowledge_level, retro, *args):
-        print('Student class init')
         self.knowledge_level = knowledge_level
         self.retrospective_object = retro
         super().__init__(*args)
@@ -23,7 +22,6 @@ class Student(Person):
                 return_list.append(cls(row[0], retro, row[2], row[3], row[4], row[5], row[6], row[7]))
         return return_list
 
-# Mark = Student()
 list1 = Student.create_by_csv("students.csv")
 print(list1[0].retrospective_object.description)
 # print(vars(list1[0]))
