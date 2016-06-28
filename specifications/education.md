@@ -14,9 +14,9 @@ None
 * ```knowledge_delta```
   * data type: integer
   * description: contains a number, that change the value of the knowledge_level of the students
-* ```happyness_delta```
+* ```happiness_delta```
   * data type: integer
-  * description: contains a number, that change the value of the happyness_level of the students
+  * description: contains a number, that change the value of the happiness_level of the students
 
 ## Instance methods
 
