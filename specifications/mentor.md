@@ -14,16 +14,6 @@ Person
 
 ## Class method
 
-### ```poledance```
-
-This method is going to increase the level of happiness and energy.
-
-#### Argument
-None
-
-#### Return value
-None
-
 ### ```create_by_csv```
 
 It reads the mentor's data from the csv file.
@@ -42,6 +32,16 @@ The constructor of the object.
 #### Arguments
 
 All of the arguments of the class itself.
+
+#### Return value
+None
+
+### ```poledance```
+
+This method is going to increase the level of happiness and energy.
+
+#### Argument
+None
 
 #### Return value
 None
