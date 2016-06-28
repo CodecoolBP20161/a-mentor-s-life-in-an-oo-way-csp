@@ -7,12 +7,10 @@ this class contains details about a soccer match
 None
 
 ## Attribute
-* ```person_1```
-    * type: person object
-    * description: we choose a person from a persons_list randomly
-* ```person_2```
-    * type: person object
-    * description: we choose another person from persons_list randomly
+* ```result```
+    * type: string
+    * description: the result of the match
+
 
 ## Class method
 
