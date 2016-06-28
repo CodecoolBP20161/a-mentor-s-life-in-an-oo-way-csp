@@ -1,5 +1,6 @@
 from person import Person
 import csv
+from retro import Retro
 
 
 class Student(Person):
@@ -18,9 +19,11 @@ class Student(Person):
         with open(file_name, "r") as f:
             reader = csv.reader(f, delimiter=",")
             for row in reader:
-                return_list.append(cls(*row))
+                retro = Retro(row[1])
+                return_list.append(cls(row[0], retro, row[2], row[3], row[4], row[5], row[6], row[7]))
         return return_list
 
 # Mark = Student()
 list1 = Student.create_by_csv("students.csv")
-print(list1[0].first_name, list1[0].last_name, list1[0].gender)
+print(list1[0].retrospective_object.description)
+# print(vars(list1[0]))
