@@ -1,3 +1,6 @@
+import csv
+
+
 class Events:
     def __init__(self, name, delta_happiness_level, delta_energy_level):
         self.name = name
@@ -6,9 +9,9 @@ class Events:
 
     @classmethod
     def create_by_csv(cls, text_file):
-        return_list = []
-        with open(file_name, "r") as f:
+        event_list = []
+        with open(text_file, "r") as f:
             reader = csv.reader(f, delimiter=",")
             for row in reader:
-                return_list.append(cls(*row))
-        return return_list
+                event_list.append(cls(*row))
+        return event_list
