@@ -20,6 +20,10 @@ None
 * ```students```
   * data type: list (containing Student objects)
   * description: stores the students of the class
+* ```retorospectives```
+  * data type: list (retro objects)
+* ```events```
+  * data type: list (event objects)
 
 ## Class methods
 
