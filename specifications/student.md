@@ -12,7 +12,7 @@ Person
   * data type: integer
   * description: stores the knowledge levels of the students
 * ```retrospective_objects```
-  * data type: list
+  * data type: string
   * description: stores the thoughts of the students
 
 ## Class Methods
