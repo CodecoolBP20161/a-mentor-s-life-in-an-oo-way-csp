@@ -27,3 +27,17 @@ class CodecoolClass:
         education = Education.create_by_csv("data/education.csv")
         local_codecool_class = cls("Budapest", 2016, mentors, students, retrospectives, events, education)
         return local_codecool_class
+
+    def find_student_by_full_name(self, name):
+        for i in self.students:
+            temp_name = i.first_name + " " + i.last_name
+            if temp_name == name:
+                return i
+        return "We don't find her\him"
+
+    def find_mentor_by_full_name(self, name):
+        for i in self.mentors:
+            temp_name = i.first_name + " " + i.last_name
+            if temp_name == name:
+                return i
+        return "We don't find her\him"
