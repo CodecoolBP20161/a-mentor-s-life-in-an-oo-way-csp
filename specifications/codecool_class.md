@@ -24,7 +24,8 @@ None
   * data type: list (retro objects)
 * ```events```
   * data type: list (event objects)
-
+* ```education```
+  * data type: list (education objects)
 ## Class methods
 
 ### ```generate_local```

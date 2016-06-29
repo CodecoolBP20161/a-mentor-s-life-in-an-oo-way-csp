@@ -14,14 +14,12 @@ class Student(Person):
 
     @classmethod
     def create_by_csv(cls, file_name):
-        return_list = []
+        student_list = []
         with open(file_name, "r") as f:
             reader = csv.reader(f, delimiter=",")
             for row in reader:
                 retro = Retro(row[1])
-                return_list.append(cls(row[0], retro, row[2], row[3], row[4], row[5], row[6], row[7]))
-        return return_list
+                student_list.append(cls(row[0], retro, row[2], row[3], row[4], row[5], row[6], row[7]))
+        return student_list
 
 list1 = Student.create_by_csv("students.csv")
-print(list1[0].retrospective_object.description)
-# print(vars(list1[0]))
