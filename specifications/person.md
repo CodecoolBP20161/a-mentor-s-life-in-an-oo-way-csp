@@ -27,7 +27,7 @@ This does not have a parent class.
   * data type: integer
   * description: shows the happiness of the person
 
-## Class methods
+## Instance methods
 
 ### ```gym```
 increase ```energy_level``` of the persons participating
@@ -37,8 +37,6 @@ None
 
 #### Return value
 None
-
-## Instance methods
 
 ### ```__init__```
 The constructor of the object.
