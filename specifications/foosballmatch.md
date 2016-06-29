@@ -8,7 +8,7 @@ None
 
 ## Attribute
 * ```result```
-    * type: string
+    * type: list
     * description: the result of the match
 
 
