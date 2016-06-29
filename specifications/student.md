@@ -34,3 +34,12 @@ The constructor of the object
 
 #### Arguments
 All of the arguments of the class itself with knowledge and retro
+
+### ```knowledge_level_changer```
+increase ```knowledge_level``` depend on the different events
+
+#### Arguments
+Delta: amount of changing
+
+#### Return value
+None
