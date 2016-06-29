@@ -46,7 +46,7 @@ increase ```energy_level``` depend on the different events
 Delta: amount of changing
 
 #### Return value
-None
+The new energy level
 
 ### ```happiness_level_changer```
 increase ```happiness_level``` depend on the different events
@@ -55,7 +55,7 @@ increase ```happiness_level``` depend on the different events
 Delta: amount of changing
 
 #### Return value
-None
+The new happiness level
 
 ### ```gym```
 increase ```energy_level``` of the persons participating
