@@ -42,4 +42,4 @@ increase ```knowledge_level``` depend on the different events
 Delta: amount of changing
 
 #### Return value
-None
+The new knowledge level
