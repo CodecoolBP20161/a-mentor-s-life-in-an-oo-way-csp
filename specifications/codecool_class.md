@@ -51,6 +51,32 @@ All of the arguments of the class itself.
 #### Return value
 None
 
+### ```count_students```
+Counts the students.
+
+#### Arguments
+None
+
+#### Return value
+None
+### ```count_mentors```
+Counts the mentors.
+
+#### Arguments
+None
+
+#### Return value
+None
+
+### ```check_energy```
+Checks the energy level.
+
+#### Arguments
+None
+
+#### Return value
+None
+
 ### ```find_student_by_full_name```
 
 Gives back a student with the same full name as the argument from ```students```
