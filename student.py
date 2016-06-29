@@ -19,7 +19,9 @@ class Student(Person):
             reader = csv.reader(f, delimiter=",")
             for row in reader:
                 retro = Retro(row[1])
-                student_list.append(cls(row[0], retro, row[2], row[3], row[4], row[5], row[6], row[7]))
+                student_list.append(cls(int(row[0]), retro, row[2], row[3], row[4], row[5], int(row[6]), int(row[7])))
         return student_list
 
-list1 = Student.create_by_csv("students.csv")
+    def knowledge_level_changer(self, delta):
+        self.knowledge_level += int(delta)
+        return self.knowledge_level
