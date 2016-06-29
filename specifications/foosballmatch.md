@@ -23,16 +23,16 @@ two players game with each other
 * ```person_2```
 
 #### Return value
-return value of the result method
+return a match result
 
-### ```result```
-generate a random result
+### ```turn_result```
+generate a random result of a turn
 
 #### Argument
 None
 
 #### Return value
-a result which is generated randomly
+a turn result which is generated randomly (0-1, 1-0)
 
 ### ```crawl_under_table```
 
