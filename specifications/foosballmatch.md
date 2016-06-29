@@ -12,7 +12,7 @@ None
     * description: the result of the match
 
 
-## Class method
+## Instance method
 
 ### ```soccer_match```
 
