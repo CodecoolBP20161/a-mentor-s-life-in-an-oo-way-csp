@@ -29,21 +29,39 @@ This does not have a parent class.
 
 ## Instance methods
 
-### ```gym```
-increase ```energy_level``` of the persons participating
-
-#### Arguments
-None
-
-#### Return value
-None
-
 ### ```__init__```
 The constructor of the object.
 
 #### Arguments
 
 All of the arguments of the class itself.
+
+#### Return value
+None
+
+### ```energy_level_changer```
+increase ```energy_level``` depend on the different events
+
+#### Arguments
+Delta: amount of changing
+
+#### Return value
+None
+
+### ```happiness_level_changer```
+increase ```happiness_level``` depend on the different events
+
+#### Arguments
+Delta: amount of changing
+
+#### Return value
+None
+
+### ```gym```
+increase ```energy_level``` of the persons participating
+
+#### Arguments
+None
 
 #### Return value
 None
