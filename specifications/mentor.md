@@ -41,7 +41,9 @@ None
 This method is going to increase the level of happiness and energy.
 
 #### Argument
-None
+```school ```
+  * Type: Codecool Class object
+  * Description: An instance of Codecool Class.
 
 #### Return value
 None
