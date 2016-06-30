@@ -25,7 +25,7 @@ class FoosballMatch:
         while self.result[0] < 6 and self.result[1] < 6:
             self.turn_result()
             print(self.result)
-            # user_input = input()
+            user_input = input()
         if self.result[0] == 0:
             while self.result[0] < 1 or self.result[1] < 10:
                 self.turn_result()

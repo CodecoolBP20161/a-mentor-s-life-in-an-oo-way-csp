@@ -8,6 +8,7 @@ class Mentor(Person):
         self.nickname = nickname
 
     def poledance(self, School):
+        print("Dani : 'Vu le vo ku se avekvá, szeszvá'")
         for student in School.students:
             student.energy_level_changer(15)
             student.happiness_level_changer(15)

@@ -23,7 +23,7 @@ class Education():
         student_2 = random.choice(School.students)
         while student_1 == student_2:
             student_2 = random.choice(School.students)
-        print("\n" + "The participants are :")
+        print("\n" + "The participants in the peer-mentoring are :")
         print(student_1.first_name, student_1.last_name, student_2.first_name, student_2.last_name)
         print("Knowledge and happiness level before the mentoring:")
         print(student_1.knowledge_level, student_1.happiness_level, student_2.knowledge_level, student_2.happiness_level)
@@ -35,7 +35,7 @@ class Education():
                 i.knowledge_level_changer(School.educations[2].delta_knowledge_level)
                 i.happiness_level_changer(School.educations[2].delta_happiness_level)
 
-        # pressenter = input()
+        pressenter = input()
         print("Knowledge and happiness level after the mentoring:")
         print(student_1.knowledge_level, student_1.happiness_level, student_2.knowledge_level, student_2.happiness_level)
 
@@ -44,7 +44,7 @@ class Education():
         student = random.choice(School.students)
         mentor = random.choice(School.mentors)
 
-        print("\n" + "The participants are :")
+        print("\n" + "The participants in the private mentoring are :")
         print(student.first_name, student.last_name, mentor.first_name, mentor.last_name)
         print("Knowledge and happiness level before the mentoring:")
         print(student.knowledge_level, student.happiness_level)
@@ -56,7 +56,7 @@ class Education():
             if i == mentor:
                 i.happiness_level_changer(School.educations[3].delta_happiness_level)
 
-        # pressenter = input()
+        pressenter = input()
         print("Knowledge and happiness level after the mentoring:")
         print(student.knowledge_level, student.happiness_level)
         print("The happiness of the mentor increased by " + School.educations[3].delta_happiness_level)
@@ -65,19 +65,14 @@ class Education():
     def not_exam(School):
         student = random.choice(School.students)
         mentor = random.choice(School.mentors)
-        print("\n" + "The participants are :")
+        print("\n" + "The participants in the NOT EXAM are :")
         print(student.first_name, student.last_name, mentor.first_name, mentor.last_name)
         print("Knowledge and happiness level before the exam:")
         print(student.knowledge_level, student.happiness_level)
         result = random.randint(0, 49)
-        # press = input()
+        pressenter = input()
         if result < 50:
             print("Sorry my friend, this was not enough, you are fired and have to pay all of the tuition fee.")
-            for i in School.students:
-                if i == student:
-                    i.knowledge_level = -1000
-                    i.happiness_level = -1000
-            print("Knowledge and happiness level after the exam:")
-            print(student.knowledge_level, student.happiness_level)
-            # press = input()
+            print("Knowledge and happiness level after the exam: -1000, -1000")
+            pressenter = input()
             print("You sucked it, potato head, it was just a joke.")
