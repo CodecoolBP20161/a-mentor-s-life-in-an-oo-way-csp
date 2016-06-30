@@ -38,6 +38,7 @@ class FoosballMatch:
         if self.result[0] > self.result[1]:
             print("The winner is: " + person1.first_name + ' ' + person1.last_name)
             print(self.result)
+            print("\n")
             if self.result[1] == 0:
                 self.crawl_under_table(person2)
         elif self.result[0] < self.result[1]:
@@ -59,4 +60,6 @@ class FoosballMatch:
             print("Player one scored")
             print(self.result)
             i += 1
+            pressenter = input()
         self.crawl_under_table("Miki")
+        print("\n")

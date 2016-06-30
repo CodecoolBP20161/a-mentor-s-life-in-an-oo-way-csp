@@ -26,7 +26,8 @@ class Education():
         print("\n" + "The participants in the peer-mentoring are :")
         print(student_1.first_name, student_1.last_name, student_2.first_name, student_2.last_name)
         print("Knowledge and happiness level before the mentoring:")
-        print(student_1.knowledge_level, student_1.happiness_level, student_2.knowledge_level, student_2.happiness_level)
+        print("Knowledge: " + str(student_1.knowledge_level) + " Happiness: " + str(student_1.happiness_level))
+        print("Knowledge: " + str(student_2.knowledge_level) + " Happiness: " + str(student_2.happiness_level))
         for i in School.students:
             if i == student_1:
                 i.knowledge_level_changer(School.educations[2].delta_knowledge_level)
@@ -37,7 +38,9 @@ class Education():
 
         pressenter = input()
         print("Knowledge and happiness level after the mentoring:")
-        print(student_1.knowledge_level, student_1.happiness_level, student_2.knowledge_level, student_2.happiness_level)
+        print("Knowledge: " + str(student_1.knowledge_level) + " Happiness: " + str(student_1.happiness_level))
+        print("Knowledge: " + str(student_2.knowledge_level) + " Happiness: " + str(student_2.happiness_level))
+        print("\n")
 
     @staticmethod
     def private_mentoring(School):
@@ -47,7 +50,7 @@ class Education():
         print("\n" + "The participants in the private mentoring are :")
         print(student.first_name, student.last_name, mentor.first_name, mentor.last_name)
         print("Knowledge and happiness level before the mentoring:")
-        print(student.knowledge_level, student.happiness_level)
+        print("Knowledge: " + str(student.knowledge_level) + " Happiness: " + str(student.happiness_level))
         for i in School.students:
             if i == student:
                 i.knowledge_level_changer(School.educations[3].delta_knowledge_level)
@@ -58,8 +61,8 @@ class Education():
 
         pressenter = input()
         print("Knowledge and happiness level after the mentoring:")
-        print(student.knowledge_level, student.happiness_level)
-        print("The happiness of the mentor increased by " + School.educations[3].delta_happiness_level)
+        print("Knowledge: " + str(student.knowledge_level) + " Happiness: " + str(student.happiness_level))
+        print("The happiness of the mentor increased by " + School.educations[3].delta_happiness_level + "\n")
 
     @staticmethod
     def not_exam(School):
@@ -67,12 +70,15 @@ class Education():
         mentor = random.choice(School.mentors)
         print("\n" + "The participants in the NOT EXAM are :")
         print(student.first_name, student.last_name, mentor.first_name, mentor.last_name)
+        pressenter = input()
         print("Knowledge and happiness level before the exam:")
         print(student.knowledge_level, student.happiness_level)
         result = random.randint(0, 49)
         pressenter = input()
+        print("It is not too serious, it is not a real exam, keep calm my friend, you can do it!!!")
+        pressenter = input()
         if result < 50:
-            print("Sorry my friend, this was not enough, you are fired and have to pay all of the tuition fee.")
+            print(mentor.nickname + ": Sorry my friend, this was not enough, you are fired and have to pay all of the tuition fee.")
             print("Knowledge and happiness level after the exam: -1000, -1000")
             pressenter = input()
             print("You sucked it, potato head, it was just a joke.")

@@ -44,16 +44,18 @@ class CodecoolClass:
         return "We don't find her\him"
 
     def count_students(self):
-        print("The number of students", len(self.students))   # print out the students
-        print("-"*20)
+        print("\n" + "The number of students", len(self.students))   # print out the students
+        print("-"*20 + "\n")
         for student in self.students:
             print(student.first_name + " " + student.last_name)
+        print("\n")
 
     def count_mentors(self):
         print("\n" + "The number of mentors", len(self.mentors))  # print out the mentors
-        print("-"*20)
+        print("-"*20 + "\n")
         for mentor in self.mentors:
             print(mentor.first_name + " " + mentor.last_name)
+        print("\n")
 
     def check_energy(self):
         energy_level_counter = 0
@@ -62,14 +64,16 @@ class CodecoolClass:
         energy_level_counter = energy_level_counter//len(self.students)
         print("-"*20)
         print("\n" + "The average energy level of the class is: " + str(energy_level_counter))
+        print("\n")
         return energy_level_counter
 
     def class_do_gym(self, energy_level_counter):
         if energy_level_counter < 70:
-            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, have a gym"')
+            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, have a gym"' + "\n")
             pressenter = input()
             for i in self.students:
                 print(i.gym())
+            print("\n")
 
     def do_project(self):
         print("\n" + "Today we are going to make a " + self.educations[0].name + "\n")
@@ -87,7 +91,7 @@ class CodecoolClass:
     def all_class_do_event(self, integer):
         print("\n" + "The event now is:")
         print(self.events[integer].name)
-        print("The energy and happiness is increased by:", self.events[integer].delta_energy_level,
+        print("\n" + "The energy and happiness is increased by:", self.events[integer].delta_energy_level,
             self.events[integer].delta_happiness_level)
         for student in self.students:
             student.energy_level_changer(self.events[integer].delta_energy_level)
@@ -110,6 +114,7 @@ class CodecoolClass:
             i.happiness_level_changer(self.events[rand_num].delta_happiness_level)
             i.energy_level_changer(self.events[rand_num].delta_energy_level)
         print("-"*20)
+        pressenter = input()
         for i in self.mentors:
             print(i.first_name, i.last_name + " will smoke " + self.events[7].name)
             i.happiness_level_changer(self.events[rand_num].delta_happiness_level)
