@@ -37,11 +37,10 @@ a turn result which is generated randomly (0-1, 1-0)
 ### ```crawl_under_table```
 
 #### Arguments
-* ```result```
-    * type: int
-    * description: result of the match
+None
+
 * ```person```
-    type: person object
+    type: string
     description: who lose the match have to crawl under the table
 
 #### Return value

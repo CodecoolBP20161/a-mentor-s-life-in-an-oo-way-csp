@@ -24,7 +24,7 @@ None
   * data type: list (retro objects)
 * ```events```
   * data type: list (event objects)
-* ```education```
+* ```educations```
   * data type: list (education objects)
 ## Class methods
 
@@ -37,7 +37,7 @@ None
 
 #### Return value
 
-```CodecoolClass``` object
+```local_codecool_class``` object
 
 ## Instance methods
 
@@ -81,18 +81,18 @@ None
 None
 
 
-### ```check_energy```
+### ```check_energy ```
 Checks the energy level.
 
 #### Arguments
 None
 
 #### Return value
-```energy_level``` method
+```energy_level_counter```
 
 
 
-### ```class_do_gym```
+### ```class_do_gym ```
 Checks the energy level.
 
 #### Arguments
@@ -127,12 +127,12 @@ None
 
 Gives back a student with the same full name as the argument from ```students```
 #### Arguments
-* ```full_name```
+* ```name```
   * data_type: string
   * description: holds the full name of the student to be found
 
 #### Return value
-```Student``` object
+```i``` , it shows the name of the student.
 
 ### ```find_mentor_by_full_name```
 
@@ -142,4 +142,4 @@ Gives back a student with the same full name as the argument from ```students```
   * description: holds the full name of the mentor to be found
 
 #### Return value
-```Mentor``` object
+```i```, it shows the name of the student.

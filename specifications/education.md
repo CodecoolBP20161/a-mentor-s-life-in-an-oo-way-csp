@@ -70,10 +70,12 @@ None
 
 ## Class methods
 
-### ```create_by_csv```
+### ```create_by_csv ```
 
 #### Arguments
-A csv file name
+```file_name ```
+  * Type: string
+  * Description: it needs a CSV file
 
 #### Return value
 A list of education objects
