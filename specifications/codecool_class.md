@@ -41,8 +41,8 @@ None
 
 ## Instance methods
 
-### ```do_event```
-Picks two students for a peer-mentoring session.
+### ```all_class_do_event```
+Make all of the class to do something.
 
 #### Arguments
 ```integer ```
@@ -105,6 +105,14 @@ Checks the energy level.
 None
 
 
+### ```do_event_after_school```
+Do something after school.
+
+#### Arguments
+None
+
+#### Return value
+None
 
 ### ```do_project```
 The students do a project given by the mentor.
