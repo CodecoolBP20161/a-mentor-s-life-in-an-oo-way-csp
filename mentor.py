@@ -7,10 +7,10 @@ class Mentor(Person):
         super().__init__(*args)
         self.nickname = nickname
 
-
-    def poledance(self, energy_level, happines_level):
-        self.energy_level += 4
-        self.happines_level += 8
+    def poledance(self, School):
+        for student in School.students:
+            student.energy_level_changer(15)
+            student.happiness_level_changer(15)
 
     @classmethod
     def create_by_csv(cls, file_name):
@@ -20,6 +20,3 @@ class Mentor(Person):
             for i in reader:
                 mentor_list.append(Mentor(i[0], i[1], i[2], i[3], i[4], i[5], i[6]))
         return mentor_list
-
-file_name = "data/mentors.csv"
-x = Mentor.create_by_csv(file_name)

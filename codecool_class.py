@@ -41,3 +41,61 @@ class CodecoolClass:
             if temp_name == name:
                 return i
         return "We don't find her\him"
+
+    def count_students(self):
+        print("The number of students", len(self.students))   # print out the students
+        print("-"*20)
+        for student in self.students:
+            print(student.first_name + " " + student.last_name)
+
+    def count_mentors(self):
+        print("\n" + "The number of mentors", len(self.mentors))  # print out the mentors
+        print("-"*20)
+        for mentor in self.mentors:
+            print(mentor.first_name + " " + mentor.last_name)
+
+    def check_energy(self):
+        energy_level_counter = 0
+        for i in self.students:       # We check the enery level of the students
+            energy_level_counter += int(i.energy_level)
+        energy_level_counter = energy_level_counter//len(self.students)
+        print("-"*20)
+        print("\n" + "The average energy level of the class is: " + str(energy_level_counter))
+        return energy_level_counter
+
+    def class_do_gym(self, energy_level_counter):
+        if energy_level_counter < 70:
+            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, have a gym"')
+            for i in self.students:
+                print(i.gym())
+
+    def do_project(self):
+        print("\n" + "Today we are going to make a " + self.educations[0].name)
+        for student in self.students:
+            print("Knowledge and happiness level, before and after")
+            print(student.first_name+" "+student.last_name+" "+str(student.knowledge_level)+ \
+            " "+str(student.happiness_level))
+            student.knowledge_level_changer(self.educations[0].delta_knowledge_level)
+            student.happiness_level_changer(self.educations[0].delta_happiness_level)
+            print(student.first_name+" "+student.last_name+" "+str(student.knowledge_level)+ \
+            " "+str(student.happiness_level))
+            print("-"*30)
+
+    def do_event(self, integer):
+        print("\n" + "The event now is:")
+        print(self.events[integer].name)
+        print("The energy and happiness is increased by:", self.events[integer].delta_energy_level,
+            self.events[integer].delta_happiness_level)
+        for student in self.students:
+            student.energy_level_changer(self.events[integer].delta_energy_level)
+            student.happiness_level_changer(self.events[integer].delta_happiness_level)
+        for mentor in self.mentors:
+            mentor.energy_level_changer(self.events[integer].delta_energy_level)
+            mentor.happiness_level_changer(self.events[integer].delta_happiness_level)
+
+    def do_retro(self):
+        print("\n" + "The retrospectives are the following:")
+        counter = 1
+        for i in self.retrospectives:
+            print(str(counter) + " " + i.description)
+            counter += 1

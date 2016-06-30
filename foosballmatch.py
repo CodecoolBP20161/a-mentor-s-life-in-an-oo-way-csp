@@ -5,6 +5,9 @@ from student import Student
 class FoosballMatch:
     result = [0, 0]
 
+    def __init__(self):
+        self.result = [0, 0]
+
     def turn_result(self):
         temporary = random.randint(0, 1)
         if temporary == 0:
@@ -22,7 +25,7 @@ class FoosballMatch:
         while self.result[0] < 6 and self.result[1] < 6:
             self.turn_result()
             print(self.result)
-
+            # user_input = input()
         if self.result[0] == 0:
             while self.result[0] < 1 or self.result[1] < 10:
                 self.turn_result()
@@ -47,8 +50,13 @@ class FoosballMatch:
             print(self.result)
 
     def crawl_under_table(self, person):
-        print("You sucked it my friend, crawl under the table " + person.first_name + ' ' + person.last_name)
+        print("You sucked it my friend, crawl under the table " + person)
 
-list1 = Student.create_by_csv("students.csv")
-match = FoosballMatch()
-match.soccer_match(list1[0], list1[1])
+    def match_with_Miki(self, person1, miki):
+        i = 0
+        while i < 10:
+            self.result[0] += 1
+            print("Player one scored")
+            print(self.result)
+            i += 1
+        self.crawl_under_table("Miki")
