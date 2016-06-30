@@ -47,6 +47,16 @@ a turn result which is generated randomly (0-1, 1-0)
 #### Return value
 None
 
+### ```match_with_miki```
+Miki plays a game with someone, and as usual, Miki loses. Also, he will crawl under the table. As usual.
+
+#### Arguments
+* ```person_1```
+* ```miki```
+
+#### Return value
+None
+
 ### ```__init__```
 The constructor of the object.
 
