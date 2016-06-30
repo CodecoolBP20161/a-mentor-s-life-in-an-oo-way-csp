@@ -41,6 +41,17 @@ None
 
 ## Instance methods
 
+### ```do_event```
+Picks two students for a peer-mentoring session.
+
+#### Arguments
+```integer ```
+  * Type: integer
+  * Description: we call the desired event from the list, according to this number.
+
+#### Return value
+None
+
 ### ```__init__```
 The constructor of the object.
 
@@ -62,14 +73,41 @@ None
 ### ```count_mentors```
 Counts the mentors.
 
+
 #### Arguments
 None
 
 #### Return value
 None
 
+
 ### ```check_energy```
 Checks the energy level.
+
+#### Arguments
+None
+
+#### Return value
+```energy_level``` method
+
+
+
+### ```class_do_gym```
+Checks the energy level.
+
+#### Arguments
+```energy_level_counter ```
+  * data_type: integer
+  * description: shows the student's energy level
+
+
+#### Return value
+None
+
+
+
+### ```do_project```
+The students do a project given by the mentor.
 
 #### Arguments
 None

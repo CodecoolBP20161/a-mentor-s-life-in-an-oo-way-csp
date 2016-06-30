@@ -30,6 +30,43 @@ All of the arguments of the class itself.
 
 #### Return value
 None
+## Static methods
+
+### ```peer_mentoring```
+Picks two students for a peer-mentoring session.
+
+#### Arguments
+
+```school ```
+  * Type: Codecool Class object
+  * Description: An instance of Codecool Class.
+
+#### Return value
+None
+
+### ```private_mentoring```
+Picks a mentor and a student for a private-mentoring session.
+
+#### Arguments
+
+```school ```
+  * Type: Codecool Class object
+  * Description: An instance of Codecool Class.
+
+#### Return value
+None
+
+### ```not_exam```
+Picks a student and a mentor for the 'not exam'.
+
+#### Arguments
+
+```school ```
+  * Type: Codecool Class object
+  * Description: An instance of Codecool Class.
+
+#### Return value
+None
 
 ## Class methods
 
