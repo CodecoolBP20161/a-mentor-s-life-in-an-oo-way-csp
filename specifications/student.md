@@ -21,7 +21,9 @@ Person
 Read the students from a file
 
 #### Arguments
-* file_name
+```file_name ```
+  * Type: string
+  * Description: Waits for a CSV file
 
 
 #### Return value

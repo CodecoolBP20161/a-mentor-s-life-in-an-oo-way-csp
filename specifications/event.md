@@ -40,4 +40,4 @@ A csv file contains the name of the events, and the happiness and energy deltas
 
 #### Return value
 
-returns list of event objects
+returns ```event_list```
