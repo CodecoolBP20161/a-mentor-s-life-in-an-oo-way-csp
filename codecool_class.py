@@ -69,7 +69,9 @@ class CodecoolClass:
 
     def class_do_gym(self, energy_level_counter):
         if energy_level_counter < 70:
-            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, lets do some exercises!"' + "\n")
+            print(
+                self.mentors[1].first_name+" "+self.mentors[1].last_name +
+                ':"Class energy is low guys, lets do some exercises!"' + "\n")
             pressenter = input()
             for i in self.students:
                 print(i.gym())
@@ -79,19 +81,22 @@ class CodecoolClass:
         print("\n" + "Today we are going to make a " + self.educations[0].name + "\n")
         for student in self.students:
             print("Knowledge and happiness level, before and after:")
-            print(student.first_name+" "+student.last_name+" "+str(student.knowledge_level)+
-            " "+str(student.happiness_level))
+            print(
+                student.first_name+" "+student.last_name+" "+str(student.knowledge_level) +
+                " "+str(student.happiness_level))
             student.knowledge_level_changer(self.educations[0].delta_knowledge_level)
             student.happiness_level_changer(self.educations[0].delta_happiness_level)
-            print(student.first_name+" "+student.last_name+" "+str(student.knowledge_level)+
-            " "+str(student.happiness_level))
+            print(
+                student.first_name+" "+student.last_name+" "+str(student.knowledge_level) +
+                " "+str(student.happiness_level))
             print("-"*30)
             pressenter = input()
 
     def all_class_do_event(self, integer):
         print("\n" + "The event now is:")
         print(self.events[integer].name)
-        print("\n" + "The energy and happiness is increased by:", self.events[integer].delta_energy_level,
+        print(
+            "\n" + "The energy and happiness is increased by:", self.events[integer].delta_energy_level +
             self.events[integer].delta_happiness_level)
         for student in self.students:
             student.energy_level_changer(self.events[integer].delta_energy_level)
