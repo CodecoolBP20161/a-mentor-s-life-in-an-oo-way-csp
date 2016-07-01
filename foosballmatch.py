@@ -18,7 +18,10 @@ class FoosballMatch:
             print("Player one scored")
         return self.result
 
-    def soccer_match(self, person1, person2):
+    def soccer_match(self, person1, person2, School):
+        while person1 == person2:
+            person2 = random.choice(School.students)
+
         print("Player one: " + person1.first_name, person1.last_name)
         print("Player two: " + person2.first_name, person2.last_name)
 
