@@ -17,7 +17,7 @@ class Person:
             self.energy_level += 30
             if self.energy_level > 100:
                 self.energy_level = 100
-        return "Gym gym gym, húhhhhh"
+        return "Gym gym gym, húhhhhh, sweat, sweat, sweat"
 
     def energy_level_changer(self, delta):
         self.energy_level += int(delta)

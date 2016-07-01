@@ -69,7 +69,7 @@ class CodecoolClass:
 
     def class_do_gym(self, energy_level_counter):
         if energy_level_counter < 70:
-            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, have a gym"' + "\n")
+            print(self.mentors[1].first_name+" "+self.mentors[1].last_name, ':"Class energy is low guys, lets do some exercises!"' + "\n")
             pressenter = input()
             for i in self.students:
                 print(i.gym())

@@ -23,7 +23,7 @@ two players game with each other
 * ```person_2```
 
 #### Return value
-return a match result
+```Person``` object, returns the winnder of the match
 
 ### ```turn_result```
 generate a random result of a turn
