@@ -26,14 +26,6 @@ class FoosballMatch:
             self.turn_result()
             print(self.result)
             user_input = input()
-        if self.result[0] == 0:
-            while self.result[0] < 1 or self.result[1] < 10:
-                self.turn_result()
-                print(self.result)
-        elif self.result[1] == 0:
-            while self.result[1] < 1 or self.result[1] < 10:
-                self.turn_result()
-                print(self.result)
 
         if self.result[0] > self.result[1]:
             print("The winner is: " + person1.first_name + ' ' + person1.last_name)
