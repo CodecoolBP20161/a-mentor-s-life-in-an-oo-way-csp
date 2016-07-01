@@ -31,22 +31,19 @@ class FoosballMatch:
             print("The winner is: " + person1.first_name + ' ' + person1.last_name)
             print(self.result)
             print("\n")
-            if self.result[1] == 0:
-                self.crawl_under_table(person2)
+            return person1
+
         elif self.result[0] < self.result[1]:
             print("The winner is: " + person2.first_name + ' ' + person2.last_name)
             print(self.result)
-            if self.result[0] == 0:
-                self.crawl_under_table(person1)
-        else:
-            print("Draw, nice fight")
-            print(self.result)
+            return person2
 
     def crawl_under_table(self, person):
         print("You sucked it my friend, crawl under the table " + person)
 
     def match_with_Miki(self, person1, miki):
         i = 0
+        print("The opponent is:", person1.first_name, person1.last_name)
         while i < 10:
             self.result[0] += 1
             print("Player one scored")
