@@ -21,9 +21,10 @@ two players game with each other
 #### Arguments
 * ```person_1```
 * ```person_2```
+* ```School```
 
 #### Return value
-```Person``` object, returns the winnder of the match
+```Person``` object, returns the winner of the match
 
 ### ```turn_result```
 generate a random result of a turn
