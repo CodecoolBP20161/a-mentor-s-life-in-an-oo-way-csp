@@ -52,8 +52,11 @@ class FoosballMatch:
 
     def crawl_under_table(self, person):
         print("You sucked it my friend, crawl under the table " + person)
+        print(person +": Ohh noo, I don't want to carwl.☹ ☹ ☹ ")
 
     def match_with_Miki(self, person1, miki):
+        print("\n" + "Miki: Guys Please! I want to play too."+"\n")
+        pressenter = input()
         i = 0
         while i < 10:
             self.result[0] += 1
