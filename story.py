@@ -16,7 +16,8 @@ School.class_do_gym(energy_level)
 user_input = input("energy_level = School.check_energy()")
 energy_level = School.check_energy()
 user_input = input()
-print("\n" + School.mentors[0].first_name + " " + School.mentors[0].last_name,
+print(
+    "\n" + School.mentors[0].first_name + " " + School.mentors[0].last_name +
     ': "I think that the energy level is optimal."')
 user_input = input("School.do_project()")
 School.do_project()
@@ -31,7 +32,9 @@ Education.peer_mentoring(School)
 user_input = input("Education.private_mentoring(School)")
 Education.private_mentoring(School)
 user_input = input("School.mentors[0].poledance(School)")
-print(School.mentors[0].first_name + " " + School.mentors[0].last_name + ' "The boogie is in my legs! Lets do poledance."' + "\n")
+print(
+    School.mentors[0].first_name + " " + School.mentors[0].last_name +
+    ' "The boogie is in my legs! Lets do poledance."' + "\n")
 School.mentors[0].poledance(School)
 user_input = input()
 print("Energy level increased by 15")
@@ -42,7 +45,7 @@ School.do_retro()
 print("\n" + School.mentors[2].first_name + ': "Thanks guys for the retrospectives."' + "\n")
 user_input = input("FoosballMatch()")
 match = FoosballMatch()
-winner = match.soccer_match(random.choice(School.students), random.choice(School.students))
+winner = match.soccer_match(random.choice(School.students), random.choice(School.students), School)
 #   The following is just a burned part, just for you Miki
 user_input = input("match_with_Miki()")
 match_with_miki = FoosballMatch()
